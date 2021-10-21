@@ -42,7 +42,6 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 noremap <LEADER><CR> :nohlsearch<CR>  "空格+回车清除搜索高亮
 
 "map s <nop>
-map S :w<CR>       "保存
 map Q :q<CR>       "退出
 map R :source $MYVIMRC<CR>  "保存生效
 
@@ -138,4 +137,3 @@ call plug#end()
 
 color snazzy
 let g:SnazzyTransparent = 1
-
